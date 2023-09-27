@@ -5,8 +5,8 @@ function PackageInfo() {
   return (
     <div className="my-5">
       <div>
-        <h2 className="text-2xl text-center">
-          Unleash Your inner wanderer - let Parthi be your guide to adventure.
+        <h2 className="text-2xl text-center my-5">
+        Featured Trekking Tours
         </h2>
       </div>
       <div className="flex gap-x-6 justify-center">

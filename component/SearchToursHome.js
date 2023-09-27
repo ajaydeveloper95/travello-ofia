@@ -2,7 +2,8 @@ import React from "react";
 
 function SearchToursHome() {
   return (
-    <div>
+    <div className="bg-slate-100 py-5">
+      <h1 className="text-2xl ml-10 mb-5">Choose Track</h1>
       <form>
         <div className="flex gap-x-6 mx-6">
           <div className="mb-6 w-1/6">
