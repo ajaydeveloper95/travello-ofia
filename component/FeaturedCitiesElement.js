@@ -1,18 +1,21 @@
 import React from "react";
+import Image from "next/image";
+import SummerImg from "public/SummerTrack.jpg";
+import Link from "next/link";
 
 function FeaturedCitiesElement() {
   return (
-    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img
-          class=" rounded-t-lg"
-          src="https://www.pathiktrips.com/uploads/tour-packages/4/1686905631Tirthan.jpg"
-          alt="product image"
+    <div className="relative overflow-hidden max-w-xs my-5 ">
+      <Link href="/">
+        <Image
+          className="opacity-80 hover:scale-150 hover:duration-1000 hover:ease-in z-0"
+          src={SummerImg}
+          width={400}
+          height={400}
+          alt="summer track"
         />
-        <h5 class="text-xl font-semibold tracking-tight text-gray-900 relative top-1 dark:text-white">
-            Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
-          </h5>
-      </a>
+        <p className="text-4xl absolute top-1/2 left-10">Summer Track</p>
+      </Link>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function PackageInfo() {
         Featured Trekking Tours
         </h2>
       </div>
-      <div className="flex gap-x-6 justify-center">
+      <div className="flex gap-x-6 justify-center flex-wrap">
         <PackageInfoElementCard />
         <PackageInfoElementCard />
         <PackageInfoElementCard />
