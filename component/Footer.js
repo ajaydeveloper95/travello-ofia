@@ -22,7 +22,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                href="/privacyPolicy"
+                href="/PrivacyPolicy"
                 className="mr-4 hover:underline md:mr-6"
               >
                 Privacy Policy
