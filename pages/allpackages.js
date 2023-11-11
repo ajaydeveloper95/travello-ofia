@@ -6,7 +6,7 @@ function tourpackages() {
     <div>
       {/* summer track */}
       <div className="w-11/12 m-auto">
-        <h2 class="text-3xl font-medium title-font text-gray-900 mt-2 text-center">Summer Packages</h2>
+        <h2 className="text-3xl font-medium title-font text-gray-900 mt-2 text-center">Summer Packages</h2>
         <div className="flex flex-wrap gap-6">
           <PackageInfoElementCard />
           <PackageInfoElementCard />
@@ -18,7 +18,7 @@ function tourpackages() {
       <hr />
       {/* winter track */}
       <div className="w-11/12 m-auto">
-        <h2 class="text-3xl font-medium title-font text-gray-900 mt-2 text-center">Winter Packages</h2>
+        <h2 className="text-3xl font-medium title-font text-gray-900 mt-2 text-center">Winter Packages</h2>
         <div className="flex flex-wrap gap-6">
           <PackageInfoElementCard />
           <PackageInfoElementCard />

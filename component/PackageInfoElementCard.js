@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 function PackageInfoElementCard(props) {
   const {
@@ -8,6 +9,8 @@ function PackageInfoElementCard(props) {
     packageStartingDest,
     packageEndDest,
     packageImg,
+    packageLocationCoverd,
+    packageInfoLink,
   } = props;
   return (
     <div className="my-5">
@@ -22,17 +25,44 @@ function PackageInfoElementCard(props) {
             </h5>
           </a>
           <hr />
-          <div className="flex justify-between mt-4">
-            <p className="dark:text-white">
-              Trip : <span>{packageStartingDest}</span> To{" "}
-              <span>{packageEndDest}</span>
-            </p>
-            <div>
+          <div className="mb-4">
+            {/* card down section */}
+            <div className="flex justify-between mt-4">
               <p className="dark:text-white">
-                <span>&#8377; {packagePrice}</span>
+                Pickup : <span>{packageStartingDest}</span>
+              </p>
+            </div>
+            {/* card down section */}
+            <div className="flex justify-between mt-4">
+              <p className="dark:text-white">
+                Location : <span>{packageLocationCoverd}</span>
+              </p>
+            </div>
+            {/* card down section */}
+            <div className="flex justify-between mt-4">
+              <p className="dark:text-white">
+                Drop : <span>{packageEndDest}</span>
+              </p>
+            </div>
+            {/* card down section */}
+            <div className="flex justify-between mt-4">
+              <p className="dark:text-white">
+                Duration : <span> {packagePrice}</span>
+              </p>
+            </div>
+            {/* card down section */}
+            <div className="flex justify-between mt-4">
+              <p className="dark:text-white">
+                Price : <span>&#8377; {packagePrice}</span>
               </p>
             </div>
           </div>
+          <hr />
+          <Link href={packageInfoLink} target="_blank">
+            <div className="text-white dark:text-black bg-slate-700 rounded-lg dark:bg-green-400 dark:hover:bg-green-100 mt-2 p-1 text-center">
+              Complete Information
+            </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -47,6 +77,8 @@ PackageInfoElementCard.propTypes = {
   packageStartingDest: PropTypes.string.isRequired,
   packageEndDest: PropTypes.string.isRequired,
   packageImg: PropTypes.string.isRequired,
+  packageLocationCoverd: PropTypes.string.isRequired,
+  packageInfoLink: PropTypes.string.isRequired,
 };
 
 // set defaultprops
@@ -55,6 +87,8 @@ PackageInfoElementCard.defaultProps = {
   packagePrice: "00.00",
   packageStartingDest: "Wait... ",
   packageEndDest: "Wait...",
+  packageInfoLink: "https://teckiajay.com",
+  packageLocationCoverd: "Delhi-unknow-more-etc",
   packageImg:
     "https://cdn.pixabay.com/photo/2018/08/29/22/52/woman-3640935_1280.jpg",
 };
