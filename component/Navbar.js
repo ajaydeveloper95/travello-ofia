@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import LogoImg from "public/thebagPacker-logo.jpg";
 
 function Navbar() {
   const NavCollapse = () => {
@@ -11,9 +13,11 @@ function Navbar() {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-100 flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center">
-            <img
-              src="https://yt3.googleusercontent.com/pfjds5_5zCXS0lvzTIWJobT9QtJlXq9zE_jBPV10soP4QMCiP9gOCcjuCqDB1gjmJXUE5tCJ=s176-c-k-c0x00ffffff-no-rj"
-              className="h-8 mr-3 rounded-full border-black"
+            <Image
+              width={30}
+              height={30}
+              src={LogoImg}
+              className="mr-3 rounded-full border-black"
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -56,7 +60,7 @@ function Navbar() {
                   Home
                 </Link>
               </li>
-             
+
               <li>
                 <Link
                   href="/allpackages"

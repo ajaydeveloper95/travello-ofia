@@ -8,14 +8,14 @@ import WhyChooseUs from "@/component/WhyChooseUs";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <HomePageSliderImg />
       <PackageInfo />
       <WhyChooseUs />
       <FeaturedCitiesHomePage />
       <CustomerFeedBack />
-      <ConnectWithUs/>
+      <ConnectWithUs />
       <QuerySectionHomePage />
-    </main>
+    </>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import LogoImg1 from "public/SummerTrack.jpg";
 
 function CustomerFeedBack() {
   return (
@@ -26,9 +28,11 @@ function CustomerFeedBack() {
                   try-hard pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
-                  <img
+                  <Image
+                  width={200}
+                  height={200}
                     alt="testimonial"
-                    src="https://dummyimage.com/106x106"
+                    src={LogoImg1}
                     className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                   />
                   <span className="flex-grow flex flex-col pl-4">
@@ -57,9 +61,11 @@ function CustomerFeedBack() {
                   try-hard pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
-                  <img
+                  <Image
+                  width={200}
+                  height={200}
                     alt="testimonial"
-                    src="https://dummyimage.com/107x107"
+                    src={LogoImg1}
                     className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                   />
                   <span className="flex-grow flex flex-col pl-4">

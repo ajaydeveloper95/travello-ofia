@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import Image from "next/image";
 
 function PackageInfoElementCard(props) {
   const {
@@ -16,7 +17,13 @@ function PackageInfoElementCard(props) {
     <div className="my-5">
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img className="rounded-t-lg" src={packageImg} alt="packageImg" />
+          <Image
+            className="rounded-t-lg"
+            width={400}
+            height={400}
+            src={packageImg}
+            alt="packageImg"
+          />
         </a>
         <div className="p-5">
           <a href="#">
