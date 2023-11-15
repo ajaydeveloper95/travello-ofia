@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LogoImg from "public/thebagPacker-logo.jpg";
+import LogoImg from "public/thebagPacker-logo.png";
 
 function Navbar() {
   const NavCollapse = () => {

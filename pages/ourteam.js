@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import AjayTecki from "public/ajayImg.jpg";
 
 function ourteam() {
   return (
@@ -11,9 +12,10 @@ function ourteam() {
               OUR TEAM
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them.
+              "TheBagPacker is a travel company. Start with simple ideas and
+              grew profitable businesses from the ground up."With this in mind,
+              TheBagPacker “Meet our team” section is a great way to illustrate
+              that idea."
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -24,16 +26,16 @@ function ourteam() {
                   height={200}
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                  src="https://cdn.pixabay.com/photo/2015/07/10/16/15/man-839604_1280.jpg"
+                  src={AjayTecki}
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Alper Kamu
+                    Ajay Kumar
                   </h2>
-                  <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 className="text-gray-500 mb-3">Developer</h3>
                   <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    Ajay kumar is developer. This person is design and maintain
+                    TheBagPacker website.
                   </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
@@ -90,12 +92,12 @@ function ourteam() {
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Holden Caulfield
+                    Yogesh Dhaka
                   </h2>
-                  <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 className="text-gray-500 mb-3">Manager</h3>
                   <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    Yogesh Dhaka is Manager. Yogash and it's team manage the
+                    customer and customer problem.
                   </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
@@ -148,16 +150,16 @@ function ourteam() {
                   height={200}
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                  src="https://cdn.pixabay.com/photo/2015/07/10/16/15/man-839604_1280.jpg"
+                  src="https://images.pexels.com/photos/8981857/pexels-photo-8981857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Atticus Finch
+                    Madhu Kumari
                   </h2>
-                  <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 className="text-gray-500 mb-3">Finance</h3>
                   <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    Madhu Kumari is Financial Advisor. Madhu and it's team
+                    manage the finance section.
                   </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
@@ -210,16 +212,16 @@ function ourteam() {
                   height={200}
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                  src="https://cdn.pixabay.com/photo/2015/07/10/16/15/man-839604_1280.jpg"
+                  src="https://images.pexels.com/photos/18069238/pexels-photo-18069238/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-how-ai-powered-tools-can-support-us-and-save-time-it-was-created-by-martina-stiftinger-as-part-of-the-visua.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Henry Letham
+                    Tecki Ajay
                   </h2>
-                  <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 className="text-gray-500 mb-3">Tech Support</h3>
                   <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    Tecki Ajay is a patner Company. It's handle all the type of
+                    technical part in thebagpacker company.
                   </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">

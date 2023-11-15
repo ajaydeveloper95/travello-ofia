@@ -10,27 +10,23 @@ function PackageInfoElementCard(props) {
     packageStartingDest,
     packageEndDest,
     packageImg,
-    packageLocationCoverd,
+    packageDuration,
     packageInfoLink,
   } = props;
   return (
     <div className="my-5">
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <Image
-            className="rounded-t-lg"
-            width={400}
-            height={400}
-            src={packageImg}
-            alt="packageImg"
-          />
-        </a>
+        <Image
+          className="rounded-t-lg"
+          width={400}
+          height={400}
+          src={packageImg}
+          alt="packageImg"
+        />
         <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {packageName}
-            </h5>
-          </a>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {packageName}
+          </h5>
           <hr />
           <div className="mb-4">
             {/* card down section */}
@@ -40,11 +36,11 @@ function PackageInfoElementCard(props) {
               </p>
             </div>
             {/* card down section */}
-            <div className="flex justify-between mt-4">
+            {/* <div className="flex justify-between mt-4">
               <p className="dark:text-white">
                 Location : <span>{packageLocationCoverd}</span>
               </p>
-            </div>
+            </div> */}
             {/* card down section */}
             <div className="flex justify-between mt-4">
               <p className="dark:text-white">
@@ -54,7 +50,7 @@ function PackageInfoElementCard(props) {
             {/* card down section */}
             <div className="flex justify-between mt-4">
               <p className="dark:text-white">
-                Duration : <span> {packagePrice}</span>
+                Duration : <span> {packageDuration}</span>
               </p>
             </div>
             {/* card down section */}
@@ -84,8 +80,8 @@ PackageInfoElementCard.propTypes = {
   packageStartingDest: PropTypes.string.isRequired,
   packageEndDest: PropTypes.string.isRequired,
   packageImg: PropTypes.string.isRequired,
-  packageLocationCoverd: PropTypes.string.isRequired,
   packageInfoLink: PropTypes.string.isRequired,
+  packageDuration: PropTypes.string.isRequired,
 };
 
 // set defaultprops
@@ -95,7 +91,7 @@ PackageInfoElementCard.defaultProps = {
   packageStartingDest: "Wait... ",
   packageEndDest: "Wait...",
   packageInfoLink: "https://teckiajay.com",
-  packageLocationCoverd: "Delhi-unknow-more-etc",
+  packageDuration: "0 Day / 0 Night",
   packageImg:
     "https://cdn.pixabay.com/photo/2018/08/29/22/52/woman-3640935_1280.jpg",
 };
