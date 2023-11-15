@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import AjayTecki from "public/ajayImg.jpg";
 
 function about() {
   return (
@@ -14,7 +15,7 @@ function about() {
                     <Image
                       width={200}
                       height={200}
-                      src="https://cdn.pixabay.com/photo/2015/07/10/16/15/man-839604_1280.jpg"
+                      src={AjayTecki}
                       alt="img"
                       className="w-full rounded-2xl"
                     />
@@ -23,7 +24,7 @@ function about() {
                     <Image
                       width={200}
                       height={200}
-                      src="https://cdn.pixabay.com/photo/2015/07/10/16/15/man-839604_1280.jpg"
+                      src="https://images.pexels.com/photos/8981857/pexels-photo-8981857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="img"
                       className="w-full rounded-2xl"
                     />
@@ -34,7 +35,7 @@ function about() {
                     <Image
                       width={200}
                       height={200}
-                      src="https://cdn.pixabay.com/photo/2015/07/10/16/15/man-839604_1280.jpg"
+                      src="https://images.pexels.com/photos/18069238/pexels-photo-18069238/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-how-ai-powered-tools-can-support-us-and-save-time-it-was-created-by-martina-stiftinger-as-part-of-the-visua.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="img"
                       className="w-full rounded-2xl"
                     />
@@ -615,15 +616,13 @@ function about() {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-2 text-lg font-semibold text-primary">
-                  Why Choose Us
+                  We Say
                 </span>
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
-                  Make your customers happy by giving services.
+                  Make our customers happy by giving services.
                 </h2>
                 <p className="mb-8 text-base text-body-color">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                  TheBagPacker is not only a Company. It way's to connect with the nature and your dream place. Just connect with the TheBagPacker community and explore the world.
                 </p>
                 <a
                   href="/#"

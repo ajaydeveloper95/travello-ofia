@@ -7,7 +7,7 @@ import Link from "next/link";
 function FeaturedCitiesElement(props) {
   let { StylePhoto, StyleName } = props;
   return (
-    <div className="relative overflow-hidden max-w-xs my-5 ">
+    <div className="relative overflow-hidden max-w-xs my-5 -z-50 ">
       <Link href="/">
         <Image
           className="opacity-80 hover:scale-150 hover:duration-1000 hover:ease-in z-0"
