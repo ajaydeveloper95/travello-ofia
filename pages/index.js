@@ -6,11 +6,11 @@ import PackageInfo from "@/component/PackageInfo";
 import QuerySectionHomePage from "@/component/QuerySectionHomePage";
 import WhyChooseUs from "@/component/WhyChooseUs";
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <HomePageSliderImg />
-      <PackageInfo />
+      <PackageInfo data={data} />
       <WhyChooseUs />
       <FeaturedCitiesHomePage />
       <CustomerFeedBack />
@@ -18,4 +18,14 @@ export default function Home() {
       <QuerySectionHomePage />
     </>
   );
+}
+
+// This gets called on every request
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://api.thebagpacker.in/admin/`);
+  const data = await res.json();
+
+  // Pass data to the page via props
+  return { props: { data } };
 }
