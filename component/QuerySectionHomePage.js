@@ -2,7 +2,7 @@ import React from "react";
 
 function QuerySectionHomePage() {
   return (
-    <div className="bg-slate-100 py-5">
+    <div className="bg-slate-100 py-5 px-5">
       <div className="text-center">
         <h1 className="text-4xl">Any Query? Can't decide ?</h1>
         <p className="text-2xl">

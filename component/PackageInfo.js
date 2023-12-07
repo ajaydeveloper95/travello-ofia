@@ -8,7 +8,7 @@ function PackageInfo({ data }) {
     setPackageData(all);
   }, [PackageData]);
   return (
-    <div className="my-5">
+    <div className="my-5 mx-5">
       <div>
         <h2 className="text-2xl text-center my-5">Featured Trekking Tours</h2>
       </div>
